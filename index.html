@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Formulario</title>
+
+    <style>
+        btn {
+
+            width: 250px;
+            border-radius: 3px;
+            display: inline-block;
+            padding: 20px 15px;
+            text-decoration: none;
+            text-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);
+            box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn-green {
+            color: white;
+            background-color: #3CC93F;
+        }
+
+        .btn-green:hover {
+            background-color: #37B839;
+        }
+
+        .btn-green:active {
+            background-color: #29962A;
+        }
+
+        .btn-red {
+            color: white;
+            background-color: #E34242;
+        }
+
+        .btn-red:hover {
+            background-color: #C43535;
+        }
+
+        .btn-red:active {
+            background-color: #A62828;
+        }
+
+        body {
+            font-family: Arial;
+            background-color: #18a383;
+            box-sizing: border-box;
+        }
+
+        form {
+            background-color: white;
+            font-size: 12px;
+            border-radius: 3px;
+            color: #999;
+            padding: 20px;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        input {
+            outline: none;
+            border: 0px;
+            width: 280px;
+        }
+
+        .boxes {
+            border: solid 1px #ccc;
+            padding: 10px;
+            width: 280px;
+
+        }
+
+        .boxes:focus {
+            border-color: #18a383;
+        }
+
+        .center-content {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="enviar.php" method="POST">
+        <p><label for="nombre">Ingrese su nombre:</label></p>
+        <input type="text" placeholder="Escriba su nombre" name="nombre" id="nombre" class="boxes"><br>
+        <p><label for="Apellido1">Ingrese su primer apellido:</label></p>
+        <input type="text" placeholder="Primer Apellido" name="Apellido1" id="Apellido1" class="boxes"><br>
+        <p><label for="Apellido2">Ingrese su segundo apellido:</label></p>
+        <input type="text" placeholder="Segundo apellido" name="Apellido2" id="Apellido2" class="boxes"><br>
+        <p><label for="correo">Ingrese su correo:</label></p>
+        <input type="email" placeholder="Email" name="correo" id="correo" class="boxes"><br>
+        <p><label for="password">Ingrese su contraseña:</label></p>
+        <input type="password" placeholder="contraseña" name="password" id="password" class="boxes"><br>
+        <p><label for="FDN">Ingrese su fecha de nacimiento:</label></p>
+        <input type="date" placeholder="00/00/0000" name="FDN" id="FDN" class="boxes"><br><br>
+        <label>Seleccione su sexo: H/M</label>
+        <input type="text" placeholder="gender" name="gender" id="gender" class="boxes"><br>
+        
+        <br><br>
+
+        <p class="center-content">
+            <input type="submit" name="Enviar" id="boton1" class="btn btn-red">
+        </p>
+    </form>
+
+</body>
+
+</html>
